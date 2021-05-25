@@ -10,6 +10,7 @@
 
 ## Repo Setup
 
+- (if working in a group) give each member _write_ access to the repo
 - Turn on GitHub Pages and put a link to your website in the repo's description
 - in the _Branches_ section of your repo's settings make sure:
   - The repository [requires a review](https://github.blog/2018-03-23-require-multiple-reviewers/) before pull requests can be merged.
