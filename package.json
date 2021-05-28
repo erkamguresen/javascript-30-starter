@@ -2,7 +2,8 @@
   "name": "word-list",
   "version": "1.0.0",
   "scripts": {
-    "document": "node ./dev-scripts/document.js",
+    "tree": "depcruise --include-only \"^src\" --output-type dot src | graphviz -Tsvg -odependency-graph.svg",
+    "document": "node ./dev-scripts/document.js && npm run tree",
     "test": "node --experimental-vm-modules node_modules/.bin/jest",
     "test:ci": "node --experimental-vm-modules node_modules/.bin/jest",
     "lint:css": "stylelint",
@@ -34,6 +35,8 @@
     "jsdoc-to-markdown": "^6.0.1",
     "prettier": "^2.2.1",
     "stylelint": "^13.13.1",
-    "stylelint-config-standard": "^22.0.0"
+    "stylelint-config-standard": "^22.0.0",
+    "dependency-cruiser": "^10.0.1",
+    "graphviz-cli": "^1.0.0"
   }
 }
