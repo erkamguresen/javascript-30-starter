@@ -36,7 +36,9 @@
 
 # /init
 
-### [./src/init/index.js](./src/init/index.js)
+<details><summary><a href="../src/init/index.js" id="srcinitindexjs">src/init/index.js</a></summary>
+
+</details>
 
 ---
 
@@ -66,6 +68,8 @@
 
 [TOP](#DOCS)
 
-## [./src/data.js](./src/data.js)
+<details><summary><a href="../src/data.js" id="srcdatajs">src/data.js</a></summary>
+
+</details>
 
 <!-- END DOCS -->
