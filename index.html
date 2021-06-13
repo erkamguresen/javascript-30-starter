@@ -2,13 +2,43 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>Memory Game (Demo)</title>
 
     <link href="./public/style.css" rel="stylesheet" />
   </head>
 
   <body>
-    <div id="root"></div>
+    <div id="root" class="centered">
+      <button id="reset">new game</button>
+      <table id="tiles">
+        <tbody>
+          <tr>
+            <td data-selected="no" class="hidden"></td>
+            <td data-selected="no" class="hidden"></td>
+            <td data-selected="no" class="hidden"></td>
+            <td data-selected="no" class="hidden"></td>
+          </tr>
+          <tr>
+            <td data-selected="no" class="hidden"></td>
+            <td data-selected="no" class="hidden"></td>
+            <td data-selected="no" class="hidden"></td>
+            <td data-selected="no" class="hidden"></td>
+          </tr>
+          <tr>
+            <td data-selected="no" class="hidden"></td>
+            <td data-selected="no" class="hidden"></td>
+            <td data-selected="no" class="hidden"></td>
+            <td data-selected="no" class="hidden"></td>
+          </tr>
+          <tr>
+            <td data-selected="no" class="hidden"></td>
+            <td data-selected="no" class="hidden"></td>
+            <td data-selected="no" class="hidden"></td>
+            <td data-selected="no" class="hidden"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
     <script type="module" src="./src/init/index.js"></script>
   </body>
