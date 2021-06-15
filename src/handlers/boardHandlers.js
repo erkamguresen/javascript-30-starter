@@ -4,12 +4,18 @@ export function showCellTemp(event) {
   //   console.log(event.type, event.target);
 }
 
-export function showCellPermanent(event) {
+export function showOrHideCellPermanent(event) {
   const cell = event.target;
 
-  cell.setAttribute('data-selected', 'yes');
-  cell.className = 'visible';
-  console.log(event.type);
+  if (cell.nodeName === 'TD' && cell.getAttribute('data-selected') === 'no') {
+    cell.setAttribute('data-selected', 'yes');
+    cell.className = 'visible';
+  } else if (
+    cell.nodeName === 'TD' &&
+    cell.getAttribute('data-selected') === 'yes'
+  ) {
+    cell.setAttribute('data-selected', 'no');
+  }
 }
 
 export function hideCellValue(event) {
